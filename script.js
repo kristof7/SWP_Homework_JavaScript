@@ -12,6 +12,26 @@ console.log("***************1****************");
     Input: showOnlyUsersWithRace('Polish')
     Output: []*/
 
+
+function showOnlyUsersWithRace(raceChoose) {
+  for (i = 0; i < people.length; i++) {
+    var result = "";
+    if (people[i].race == raceChoose) {
+      result = people[i];
+      break;
+    } else if (people[i].race.includes(raceChoose) == false && typeof (raceChoose) == "string") {
+      result = [];
+    } else {
+      result = "taka rasa nie istnieje";
+    }
+  }
+  return console.log(result);
+}
+showOnlyUsersWithRace("Uruguayan");
+showOnlyUsersWithRace(1);
+showOnlyUsersWithRace("Polish");
+
+
 console.log("***************2***************");
 
 /*
