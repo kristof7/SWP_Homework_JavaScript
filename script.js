@@ -190,19 +190,30 @@ console.log("***************8***************");
 // Output: 'Elementy większe lub równe 20: 21,49,20,72,23,120,20,29,47,32.'
 
 
-var elem = [];
-for (i = 0; i < numbersList.length; i++) {
-  if (numbersList[i] >= 20) {
-    elem.push(numbersList[i]);
-  }
-}
-console.log("Elementy większe lub równe 20: " +
-  elem + ".");
+// var elem = [];
+// for (i = 0; i < numbersList.length; i++) {
+//   if (numbersList[i] >= 20) {
+//     elem.push(numbersList[i]);
+//   }
+// }
+// console.log("Elementy większe lub równe 20: " +
+//   elem + ".");
 
 
 console.log("***************9***************");
 // 9. Wyświetl sumę elementów tylko ujemnych:
 // Output: 'Suma elementów ujemnych: -193.'
+
+
+var sumMinus = 0;
+for (i = 0; i < numbersList.length; i++) {
+  if (numbersList[i] < 0) {
+    sumMinus = sumMinus + numbersList[i];
+  }
+}
+console.log("Suma elementów ujemnych: " +
+  sumMinus + ".");
+
 
 console.log("**************10***************");
 // 10*. Wyświetl sumę elemnetów na pozycjach parzystych:
