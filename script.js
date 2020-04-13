@@ -177,17 +177,28 @@ console.log("***************7***************");
 // Output: 'Suma wartości bezwględnych z elementów w tablicy: 648.'
 
 
-var sumAbs = 0;
-for (i = 0; i < numbersList.length; i++) {
-  sumAbs = sumAbs + Math.abs(numbersList[i]);
-}
-console.log("Suma wartości bezwzględnych w tablicy to " +
-  sumAbs + ".");
+// var sumAbs = 0;
+// for (i = 0; i < numbersList.length; i++) {
+//   sumAbs = sumAbs + Math.abs(numbersList[i]);
+// }
+// console.log("Suma wartości bezwzględnych w tablicy to " +
+//   sumAbs + ".");
 
 
 console.log("***************8***************");
 // 8. Wyświetl tylko elementy większe lub równe od 20:
 // Output: 'Elementy większe lub równe 20: 21,49,20,72,23,120,20,29,47,32.'
+
+
+var elem = [];
+for (i = 0; i < numbersList.length; i++) {
+  if (numbersList[i] >= 20) {
+    elem.push(numbersList[i]);
+  }
+}
+console.log("Elementy większe lub równe 20: " +
+  elem + ".");
+
 
 console.log("***************9***************");
 // 9. Wyświetl sumę elementów tylko ujemnych:
