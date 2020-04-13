@@ -115,10 +115,21 @@ console.log("***************5***************");
 5*.  Dodaj do kolekcji dodatkowe klucze:
 height: wiek + 100
 weight: wiek + 10
-bmi: weight / (height/100) ^ 2
+// bmi: weight / (height/100) ^ 2
 Następnie zwróc tablie imion tych osób, które mają BMI w zakresie 18,5–24,99.
 Output: ["Elsa", "Clarance", "Sondra", "Roderich"]
 */
+
+
+for (i = 0; i < people.length; i++) {
+  people[i].height = people[i].age + 100;
+  people[i].weight = people[i].age + 10;
+  people[i].bmi = people[i].weight / ((people[i].height / 100) * (people[i].height / 100));
+  if (people[i].bmi >= 18.5 && people[i].bmi <= 24.99) {
+    console.log(people[i]);
+  }
+}
+
 
 console.log("***************6***************");
 
