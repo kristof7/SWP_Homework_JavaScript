@@ -164,17 +164,26 @@ const numbersList = [
 // Output: 'Suma elementów w tablicy to 262.'
 
 
-var sum = 0;
-for (i = 0; i < numbersList.length; i++) {
-  sum = sum + numbersList[i];
-}
-console.log("Suma elementów w tablicy to " +
-  sum + ".");
+// var sum = 0;
+// for (i = 0; i < numbersList.length; i++) {
+//   sum = sum + numbersList[i];
+// }
+// console.log("Suma elementów w tablicy to " +
+//   sum + ".");
 
 
 console.log("***************7***************");
 // 7. Policz sumę wartości bezwględnych w tablicy
 // Output: 'Suma wartości bezwględnych z elementów w tablicy: 648.'
+
+
+var sumAbs = 0;
+for (i = 0; i < numbersList.length; i++) {
+  sumAbs = sumAbs + Math.abs(numbersList[i]);
+}
+console.log("Suma wartości bezwzględnych w tablicy to " +
+  sumAbs + ".");
+
 
 console.log("***************8***************");
 // 8. Wyświetl tylko elementy większe lub równe od 20:
