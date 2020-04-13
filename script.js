@@ -48,6 +48,10 @@ Honorable Free Sturgis work as VP Marketing in Cremin and Sons.
 Rev Raquel Lembke work as Paralegal in Goodwin Group.
 Mr Adah Cristofvao work as Health Coach IV in Sipes-Bernier. */
 
+for (i = 0; i < people.length; i++) {
+  console.log(people[i].first_name + " " + people[i].last_name + " work as " + people[i].job_title);
+}
+
 console.log("***************3***************");
 
 /*
