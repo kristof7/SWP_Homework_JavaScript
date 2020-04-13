@@ -205,16 +205,26 @@ console.log("***************9***************");
 // Output: 'Suma elementów ujemnych: -193.'
 
 
-var sumMinus = 0;
-for (i = 0; i < numbersList.length; i++) {
-  if (numbersList[i] < 0) {
-    sumMinus = sumMinus + numbersList[i];
-  }
-}
-console.log("Suma elementów ujemnych: " +
-  sumMinus + ".");
+// var sumMinus = 0;
+// for (i = 0; i < numbersList.length; i++) {
+//   if (numbersList[i] < 0) {
+//     sumMinus = sumMinus + numbersList[i];
+//   }
+// }
+// console.log("Suma elementów ujemnych: " +
+//   sumMinus + ".");
 
 
 console.log("**************10***************");
 // 10*. Wyświetl sumę elemnetów na pozycjach parzystych:
 // Output: '1.5 Suma elementów parzystych: 200'
+
+
+var sumEvens = 0;
+for (i = 0; i < numbersList.length; i++) {
+  if (i % 2 == 0) {
+    console.log(sumEvens = sumEvens + numbersList[i]);
+  }
+}
+console.log("1.5 Suma elementów parzystych: " +
+  sumEvens);
