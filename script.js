@@ -69,6 +69,22 @@ Output: [
 {id: 9, first_name: "Raquel", last_name: "Lembke", full_name: "Raquel Lembke"}
 {id: 10, first_name: "Adah", last_name: "Cristofvao", full_name: "Adah Cristofvao"}]*/
 
+
+for (i = 0; i < people.length; i++) {
+  people[i].full_name = people[i].first_name + " " + people[i].last_name;
+  var peopleShort = JSON.parse(JSON.stringify(people));
+  delete peopleShort[i].age;
+  delete peopleShort[i].company;
+  delete peopleShort[i].race;
+  delete peopleShort[i].job_title;
+  delete peopleShort[i].title;
+  delete peopleShort[i].ip_address;
+  delete peopleShort[i].gender;
+  delete peopleShort[i].email;
+
+  console.log(peopleShort[i]);
+}
+
 console.log("***************4***************");
 
 /*
