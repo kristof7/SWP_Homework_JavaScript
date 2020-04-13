@@ -99,6 +99,17 @@ Raquel ma 50 lat.
 Adah ma 54 lat.
 Razem mają: 273 lata.*/
 
+
+var ageCount = 0;
+for (i = 0; i < people.length; i++) {
+  if (people[i].age >= 30 && people[i].gender == "Female") {
+    console.log(people[i].first_name + " ma " + people[i].age + " lat");
+    ageCount += people[i].age;
+  }
+}
+console.log("Suma ich lat wynosi " + ageCount);
+
+
 console.log("***************5***************");
 /*
 5*.  Dodaj do kolekcji dodatkowe klucze:
