@@ -13,23 +13,23 @@ console.log("***************1****************");
     Output: []*/
 
 
-// function showOnlyUsersWithRace(raceChoose) {
-//   for (i = 0; i < people.length; i++) {
-//     var result = "";
-//     if (people[i].race == raceChoose) {
-//       result = people[i];
-//       break;
-//     } else if (people[i].race.includes(raceChoose) == false && typeof (raceChoose) == "string") {
-//       result = [];
-//     } else {
-//       result = "taka rasa nie istnieje";
-//     }
-//   }
-//   return console.log(result);
-// }
-// showOnlyUsersWithRace("Uruguayan");
-// showOnlyUsersWithRace(1);
-// showOnlyUsersWithRace("Polish");
+function showOnlyUsersWithRace(raceChoose) {
+  for (i = 0; i < people.length; i++) {
+    var result = "";
+    if (people[i].race == raceChoose) {
+      result = people[i];
+      break;
+    } else if (people[i].race.includes(raceChoose) == false && typeof (raceChoose) == "string") {
+      result = [];
+    } else {
+      result = "taka rasa nie istnieje";
+    }
+  }
+  return console.log(result);
+}
+showOnlyUsersWithRace("Uruguayan");
+showOnlyUsersWithRace(1);
+showOnlyUsersWithRace("Polish");
 
 
 console.log("***************2***************");
@@ -48,9 +48,9 @@ Honorable Free Sturgis work as VP Marketing in Cremin and Sons.
 Rev Raquel Lembke work as Paralegal in Goodwin Group.
 Mr Adah Cristofvao work as Health Coach IV in Sipes-Bernier. */
 
-// for (i = 0; i < people.length; i++) {
-//   console.log(people[i].first_name + " " + people[i].last_name + " work as " + people[i].job_title);
-// }
+for (i = 0; i < people.length; i++) {
+  console.log(people[i].first_name + " " + people[i].last_name + " work as " + people[i].job_title);
+}
 
 console.log("***************3***************");
 
@@ -70,20 +70,20 @@ Output: [
 {id: 10, first_name: "Adah", last_name: "Cristofvao", full_name: "Adah Cristofvao"}]*/
 
 
-// for (i = 0; i < people.length; i++) {
-//   people[i].full_name = people[i].first_name + " " + people[i].last_name;
-//   var peopleShort = JSON.parse(JSON.stringify(people));
-//   delete peopleShort[i].age;
-//   delete peopleShort[i].company;
-//   delete peopleShort[i].race;
-//   delete peopleShort[i].job_title;
-//   delete peopleShort[i].title;
-//   delete peopleShort[i].ip_address;
-//   delete peopleShort[i].gender;
-//   delete peopleShort[i].email;
+for (i = 0; i < people.length; i++) {
+  people[i].full_name = people[i].first_name + " " + people[i].last_name;
+  var peopleShort = JSON.parse(JSON.stringify(people));
+  delete peopleShort[i].age;
+  delete peopleShort[i].company;
+  delete peopleShort[i].race;
+  delete peopleShort[i].job_title;
+  delete peopleShort[i].title;
+  delete peopleShort[i].ip_address;
+  delete peopleShort[i].gender;
+  delete peopleShort[i].email;
 
-//   console.log(peopleShort[i]);
-// }
+  console.log(peopleShort[i]);
+}
 
 console.log("***************4***************");
 
@@ -100,14 +100,14 @@ Adah ma 54 lat.
 Razem mają: 273 lata.*/
 
 
-// var ageCount = 0;
-// for (i = 0; i < people.length; i++) {
-//   if (people[i].age >= 30 && people[i].gender == "Female") {
-//     console.log(people[i].first_name + " ma " + people[i].age + " lat");
-//     ageCount += people[i].age;
-//   }
-// }
-// console.log("Suma ich lat wynosi " + ageCount);
+var ageCount = 0;
+for (i = 0; i < people.length; i++) {
+  if (people[i].age >= 30 && people[i].gender == "Female") {
+    console.log(people[i].first_name + " ma " + people[i].age + " lat");
+    ageCount += people[i].age;
+  }
+}
+console.log("Suma ich lat wynosi " + ageCount);
 
 
 console.log("***************5***************");
@@ -121,14 +121,14 @@ Output: ["Elsa", "Clarance", "Sondra", "Roderich"]
 */
 
 
-// for (i = 0; i < people.length; i++) {
-//   people[i].height = people[i].age + 100;
-//   people[i].weight = people[i].age + 10;
-//   people[i].bmi = people[i].weight / ((people[i].height / 100) * (people[i].height / 100));
-//   if (people[i].bmi >= 18.5 && people[i].bmi <= 24.99) {
-//     console.log(people[i]);
-//   }
-// }
+for (i = 0; i < people.length; i++) {
+  people[i].height = people[i].age + 100;
+  people[i].weight = people[i].age + 10;
+  people[i].bmi = people[i].weight / ((people[i].height / 100) * (people[i].height / 100));
+  if (people[i].bmi >= 18.5 && people[i].bmi <= 24.99) {
+    console.log(people[i]);
+  }
+}
 
 
 console.log("***************6***************");
@@ -164,12 +164,12 @@ const numbersList = [
 // Output: 'Suma elementów w tablicy to 262.'
 
 
-// var sum = 0;
-// for (i = 0; i < numbersList.length; i++) {
-//   sum = sum + numbersList[i];
-// }
-// console.log("Suma elementów w tablicy to " +
-//   sum + ".");
+var sum = 0;
+for (i = 0; i < numbersList.length; i++) {
+  sum = sum + numbersList[i];
+}
+console.log("Suma elementów w tablicy to " +
+  sum + ".");
 
 
 console.log("***************7***************");
@@ -177,12 +177,12 @@ console.log("***************7***************");
 // Output: 'Suma wartości bezwględnych z elementów w tablicy: 648.'
 
 
-// var sumAbs = 0;
-// for (i = 0; i < numbersList.length; i++) {
-//   sumAbs = sumAbs + Math.abs(numbersList[i]);
-// }
-// console.log("Suma wartości bezwzględnych w tablicy to " +
-//   sumAbs + ".");
+var sumAbs = 0;
+for (i = 0; i < numbersList.length; i++) {
+  sumAbs = sumAbs + Math.abs(numbersList[i]);
+}
+console.log("Suma wartości bezwzględnych w tablicy to " +
+  sumAbs + ".");
 
 
 console.log("***************8***************");
@@ -190,14 +190,14 @@ console.log("***************8***************");
 // Output: 'Elementy większe lub równe 20: 21,49,20,72,23,120,20,29,47,32.'
 
 
-// var elem = [];
-// for (i = 0; i < numbersList.length; i++) {
-//   if (numbersList[i] >= 20) {
-//     elem.push(numbersList[i]);
-//   }
-// }
-// console.log("Elementy większe lub równe 20: " +
-//   elem + ".");
+var elem = [];
+for (i = 0; i < numbersList.length; i++) {
+  if (numbersList[i] >= 20) {
+    elem.push(numbersList[i]);
+  }
+}
+console.log("Elementy większe lub równe 20: " +
+  elem + ".");
 
 
 console.log("***************9***************");
@@ -205,14 +205,14 @@ console.log("***************9***************");
 // Output: 'Suma elementów ujemnych: -193.'
 
 
-// var sumMinus = 0;
-// for (i = 0; i < numbersList.length; i++) {
-//   if (numbersList[i] < 0) {
-//     sumMinus = sumMinus + numbersList[i];
-//   }
-// }
-// console.log("Suma elementów ujemnych: " +
-//   sumMinus + ".");
+var sumMinus = 0;
+for (i = 0; i < numbersList.length; i++) {
+  if (numbersList[i] < 0) {
+    sumMinus = sumMinus + numbersList[i];
+  }
+}
+console.log("Suma elementów ujemnych: " +
+  sumMinus + ".");
 
 
 console.log("**************10***************");
